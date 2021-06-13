@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV exercise</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Resume</h1>
         <nav>
-            <ul>
+            <ul class="bar"> 
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -21,34 +21,24 @@
     <main>
         <section id="about">
             <h2>About</h2>
-            <p>
-                Jonathan Doe
-            </p>
-            <p>
-                Web Designer
-            </p>
-            <img src="images.png" alt="profile picture">
-        </section>
+            <div>
+                <p id="name">
+                    Jonathan Doe, Web Designer
+                </p>
+                <p>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Jquery</li>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>Bootstrap</li>
-            </ul>
+                </p>
+            </div>
+            <div>
+                <img src="image.webp" alt="profile picture">
+            </div>
         </section>
-
         <section id="experience">
             <h2>Experience</h2>
             <table>
                 <tbody>
                     <tr>
-                        <td>Facebook</td>
+                        <td class="company">Facebook</td>
                         <td>
                             <section>
                                 <h3>Senior Interface Designer</h3>
@@ -60,7 +50,7 @@
                         <td>2015 - present</td>
                     </tr>
                     <tr>
-                        <td>Apple Inc.</td>
+                        <td class="company">Apple Inc.</td>
                         <td>
                             <section>
                                 <h3>Senior Interface Designer</h3>
@@ -72,7 +62,7 @@
                         <td>2010 - 2015</td>
                     </tr>
                     <tr>
-                        <td>Microsoft</td>
+                        <td class="company">Microsoft</td>
                         <td>
                             <section>
                                 <h3>Principal and Creative Lead</h3>
@@ -84,7 +74,7 @@
                         <td>2007 - 2010</td>
                     </tr>
                     <tr>
-                        <td>International Business Machines (IBM)</td>
+                        <td class="company">International Business Machines (IBM)</td>
                         <td>
                             <section>
                                 <h3>Lead Web Designer</h3>
@@ -98,14 +88,42 @@
                 </tbody>
             </table>
         </section>
-
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div>
+                    <ul>
+                        <li>Visual design</li>
+                        <li>Print design</li>
+                        <li>Adobe Suite</li>
+                        <li>Sketch</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Wireframing</li>
+                        <li>Color & Typography</li>
+                        <li>Responsive Web Design</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                        <li>Animation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section id="contact">
             <h2>Contact</h2>
             <ul>
                 <li>Email: name@domain.com</li>
                 <li>Tel: (313) - 867-5309</li>
-                <li>Adress</li>
-                <li>Web</li>
+                <li>Adress: </li>
+                <li>Web:</li>
             </ul>
         </section>
     </main>
