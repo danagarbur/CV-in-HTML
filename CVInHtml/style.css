@@ -1,7 +1,5 @@
 body {
     width: 80%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: larger;
     background-color: rgb(158, 218, 238);
     margin: 20px auto 60px;
 }
@@ -25,7 +23,7 @@ body {
 }
 
 img {
-    width: 350px;
+    width: 300px;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -33,13 +31,16 @@ img {
 
 #about {
     background-color: rgb(28, 164, 182);
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 #name {
-    font-size: 40px;
     font-family: cursive;
-    text-align: center;
+    text-align: left;
     color: rgb(255, 255, 255);
+    padding-left: 10px;
 }
 
 h2 {
@@ -59,19 +60,15 @@ footer {
     text-align: center;
 }
 
-#skills ul {
-    list-style-type: square;
-}
-
-.skills {
-    display: flex;
-}
-
-.skills > div {
-    margin: 10px 90px 10px;
-}
-
 #contact li {
     list-style-type: none;
 }
 
+@media screen and (max-width: 717px) {
+    img {
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
